@@ -25,7 +25,7 @@ const Moviestate = (props) => {
     const searchShows = async () =>{
         dispatch({type: SET_LOADING});
 
-        const { data }= await axios.get('https://api.tvmaze.com/search/shows?q={searchTerm}');
+        const { data }= await axios.get('https://api.tvmaze.com/search/shows?q=all');
 
         console.log(data);
         
